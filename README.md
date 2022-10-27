@@ -1,71 +1,165 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # honey-rae-repairs
+
+```
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Dion Stoade",
+      "email": "dstoade0@cornell.edu",
+      "isStaff": false
+    },
+    {
+      "id": 2,
+      "fullName": "Windy Thorneloe",
+      "email": "wthorneloe1@usa.gov",
+      "isStaff": false
+    },
+    {
+      "id": 3,
+      "fullName": "Hillie Phillpotts",
+      "email": "hphillpotts2@rakuten.co.jp",
+      "isStaff": false
+    },
+    {
+      "id": 4,
+      "fullName": "Helenelizabeth Passfield",
+      "email": "hpassfield7@netvibes.com",
+      "isStaff": true
+    },
+    {
+      "id": 5,
+      "fullName": "Franchot Slator",
+      "email": "fslator8@51.la",
+      "isStaff": true
+    },
+    {
+      "id": 6,
+      "fullName": "Renaud Erbe",
+      "email": "rerbe9@psu.edu",
+      "isStaff": true
+    },
+    {
+      "email": "jeremy@bakker.com",
+      "fullName": "Jeremy Bakker",
+      "isStaff": true,
+      "id": 7
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "address": "2802 Zula Locks",
+      "phoneNumber": "852-837-9713",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "address": "56849 Fadel Gateway",
+      "phoneNumber": "202-244-7090",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "address": "7346 Ritchie Road",
+      "phoneNumber": "(507) 720-1157",
+      "userId": 3
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "specialty": "PC Repair",
+      "rate": 72.47,
+      "userId": 4
+    },
+    {
+      "id": 2,
+      "specialty": "Apple Repair",
+      "rate": 97.39,
+      "userId": 5
+    },
+    {
+      "id": 3,
+      "specialty": "Printer Repair",
+      "rate": 29.45,
+      "userId": 6
+    }
+  ],
+  "serviceTickets": [
+    {
+      "id": 1,
+      "userId": 3,
+      "description": "Saepe ex sapiente deserunt et voluptas fugiat vero quasi. Ipsam est non ipsa. Occaecati rerum ipsa consequuntur. Ratione commodi unde sint non rerum. Sit quia et aut sunt.",
+      "emergency": false,
+      "dateCompleted": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "description": "Vero est adipisci sed natus quasi consectetur occaecati. Modi maxime sunt officia cumque. Vel at culpa. Sint accusamus deserunt dolorem qui.",
+      "emergency": true,
+      "dateCompleted": ""
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "description": "Sunt pariatur et quidem hic voluptatem. Neque aliquam voluptas eos incidunt repellendus. Vero expedita non sit quaerat sit et eum. Quasi dolor voluptatem illum eum qui est expedita sequi accusamus.",
+      "emergency": false,
+      "dateCompleted": ""
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "description": "A deleniti est sed vel. Dolores aliquid enim vero. Quia eligendi vel voluptas. Nihil nihil quasi ullam officia doloremque amet non. Officia atque quae.",
+      "emergency": false,
+      "dateCompleted": ""
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "description": "Pariatur nihil animi eos doloremque laborum fugiat consequuntur iusto. Et tempore a enim.",
+      "emergency": true,
+      "dateCompleted": "Fri Apr 29 2022 21:24:29 GMT-0500 (Central Daylight Time)"
+    },
+    {
+      "userId": 1,
+      "description": "new ticket",
+      "emergency": false,
+      "dateCompleted": "",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "description": "new one!!",
+      "emergency": true,
+      "dateCompleted": "",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "description": "Need this fixed!",
+      "emergency": true,
+      "dateCompleted": "",
+      "id": 8
+    }
+  ],
+  "employeeTickets": [
+    {
+      "id": 1,
+      "employeeId": 3,
+      "serviceTicketId": 1
+    },
+    {
+      "id": 2,
+      "employeeId": 2,
+      "serviceTicketId": 5
+    },
+    {
+      "id": 3,
+      "employeeId": 1,
+      "serviceTicketId": 4
+    }
+  ]
+}
+```
