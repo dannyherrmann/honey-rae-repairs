@@ -24,6 +24,7 @@ export const CustomerList = () => {
                 customers.map(customer => {
                     return <Customer 
                                 key={`customer--${customer.id}`}
+                                id={customer.id}
                                 fullName={customer.user.fullName}
                                 address={customer.address}
                                 phoneNumber={customer.phoneNumber}/>
