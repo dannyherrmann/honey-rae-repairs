@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Customers.css"
 import { Customer } from "./Customer"
-import { isCompositeComponent } from "react-dom/test-utils"
 
 export const CustomerList = () => {
     const [customers, setCustomers] = useState([])
